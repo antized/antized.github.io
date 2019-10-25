@@ -398,6 +398,10 @@ a.link-button:visited, a.link-button:active, a.link-button:focus {
     color: #414141;
 }
 
+.display-none {
+    display:none;
+}
+
 .btn-send {
 
     padding: 10px 30px;
@@ -876,10 +880,10 @@ body.is-menu-visible #menu .close {
     display: block;
     letter-spacing: 5px;
     text-shadow: 3px black;
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(0, 0, 0, 0.6);
     color: #fff;
     display: inline;
-    padding: 0 0.5rem;
+    padding: 0 1rem;
     /*transition: all 0.5s cubic-bezier(0.81, -0.14, 0.47, 1)*/
 }
 
@@ -1049,6 +1053,39 @@ textarea#message {
 .form-control:focus {
     border-color: #adadad;
     box-shadow: none;
+}
+
+.slick-prev,
+.slick-next
+{    
+    width: 30px;
+    height: 30px;
+}
+.slick-prev:before,
+.slick-next:before
+{
+    font-size: 30px;
+}
+.slick-prev
+{
+    left: 5px;
+    z-index: 99;
+}
+.slick-next
+{
+    right: 5px;
+}
+.slick-dots
+{
+    bottom: 5px;
+}
+.slick-dotted.slick-slider
+{
+    margin-bottom: 0;
+}
+.slick-dots li button:before
+{
+    font-size: 15px;
 }
 
 @media screen and (max-width: 600px) {

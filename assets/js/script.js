@@ -95,12 +95,23 @@ $(document).ready(function () {
 
 });
 
+
 /*--------------popup------------*/
 $('.open-popup-link').magnificPopup({
   type:'inline',
   midClick: true, // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
   gallery:{
     enabled:true
-  }
+  },
+    callbacks: {
+        change: function(){
+            var div = $(this.content).find('.col-md-8');
+            if (!div.hasClass('slick-slider')) div.slick({
+                infinite: true,
+                slidesToShow: 1,
+                dots: true
+            });
+        }
+    }
 });
 
