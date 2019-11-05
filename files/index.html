@@ -1,0 +1,162 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+        <title>Портфолио</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+		<link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">		
+		<link href="https://fonts.googleapis.com/css?family=Istok+Web" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="assets/css/magnific-popup.css">
+        <link rel="stylesheet" type="text/css" href="assets/slick/slick.css">
+        <link rel="stylesheet" type="text/css" href="assets/slick/slick-theme.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/main.css">
+	</head>
+
+	<body>
+		<section class="head" id="header">
+			<div class="wrapper">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+							<header class="header">
+								<div class="inner">
+									<!-- Logo -->									
+									<a href="index.html" class="logo">
+										<span class="symbol"></span><span class="title">Портфолио</span>
+									</a>
+								</div>
+							</header>
+							<!-- Menu -->
+							<nav id="menu">
+								<h2>Menu</h2>
+								<ul>
+									<li><a href="index.html">Home</a></li>
+									<li><a href="elements.html">Elements</a></li>
+								</ul>
+							</nav>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="main-body">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-9">
+                        <p class="drescription"><span class="orange">HTML5</span> игры на <span class="orange">CreateJS</span> / <span class="orange">Cocos2d-js</span> / <span class="orange">Phaser</span></p>
+					</div>
+				</div>
+				<div class="tiles">
+                    <div class="row">
+                        @@include('solitaire.html')
+                        @@include('sudoku.html')
+                    </div><br>
+                    <div class="row">                        
+                        @@include('360connect.html')
+                        @@include('connect2.html')
+                    </div><br>
+                    <div class="row">
+                        @@include('ringfield.html')
+                        @@include('connect.html')                        
+                    </div><br>
+					<div class="row">
+                        @@include('puddingLand.html')
+                        @@include('tetra.html')
+					</div><br>
+                    <div class="row">                        
+                        @@include('merge10.html')
+                        @@include('noDots.html')
+                    </div><br>
+                    <div class="row">                        
+                        @@include('merged.html')                        
+                        @@include('merge13.html')
+                    </div><br>
+                    <div class="row">
+                        @@include('2020-3.html')
+                        @@include('2020jelly.html')
+                        @@include('2020winter.html')
+                    </div><br>
+                    <div class="row">                        
+                        @@include('2020connect.html')
+                        @@include('poppingPets.html')                        
+                    </div><br>
+                    <div class="row">
+                        @@include('2020.html')
+                        @@include('plank.html')
+                        @@include('2020plus.html')                        
+                    </div><br>
+                    <div class="row">
+                        @@include('2020improved.html')
+                        @@include('splashyAdventure.html')
+                        @@include('2020lego.html')                        
+                    </div><br>
+					<div class="row">                        
+                        @@include('circleAdventure.html')
+                        @@include('tinyJelly.html')
+					</div><br>
+					<div class="row">
+                        @@include('letThemFight.html')                        
+                        @@include('dadsLongLegs.html')
+                        @@include('skyscraper.html')
+					</div>
+                    <div class="row">
+                        @@include('juicyBerries.html')
+                        @@include('rgbTrucker.html')
+                    </div>
+				</div>
+			</div>
+		</section>
+
+		<section class="contact">
+			<div class="container">
+				<div class="row">					
+					<div class="col-md-4">
+						<h1>КОНТАКТЫ</h1>
+							<p class="contact-desc">
+								 Игры представлены не для продажи
+							</p>				
+                            <p><Strong>Email: </Strong>nkantizzz&#64;gmail.com</p>						
+                            <p><Strong>Skype: </Strong>nkantizzz</p>
+					</div>
+				</div>				
+			</div>
+		</section>		
+
+		<section class="footer">		
+			<footer>
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-8 col-xs-9">
+							<p class="right-color">&copy; 2019</p>
+						</div>
+						<div class="col-sm-4 col-xs-3" align="right">
+							<a href="#" id="back-to-top" class="top text-right" >TOP <i class="fa fa-angle-up" aria-hidden="true"></i> </a>
+						</div>
+					</div>
+				</div>											
+			</footer>
+		</section>
+
+	<!-- Scripts -->
+		<script src="assets/js/jquery-3.1.0.min.js"></script>
+		<script src="assets/js/bootstrap.min.js"></script>
+		<script src="assets/js/jquery.magnific-popup.min.js"></script>
+        <script src="assets/slick/slick.min.js"></script>
+		<script src="assets/js/script.js"></script>
+		<!--  ===== Scroll to Top ====  -->
+	    <script>
+			if ($('#back-to-top').length) {
+			    $('#back-to-top').on('click', function (e) {
+			        e.preventDefault();
+			        $('html,body').animate({
+			            scrollTop: 0
+			        }, 700);
+			    });
+			}
+		</script>		
+	</body>
+</html>
